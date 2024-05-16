@@ -35,6 +35,11 @@ MAILTRAP_SMTP_HOST=
 MAILTRAP_SMTP_PORT=
 MAILTRAP_SMTP_USER=
 MAILTRAP_SMTP_PASS=
+
+#AWS Cognito 
+USER_POOL_ID=
+CLIENT_ID=
+
 ```
 
 Install docker & start docker engine
