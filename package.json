@@ -5,11 +5,12 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -L -P 3000 server.js"
+    "dev": "nodemon -L -P 2000 server.js"
   },
   "author": "Saravana Sai",
   "license": "ISC",
   "dependencies": {
+    "amazon-cognito-identity-js": "^6.3.12",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

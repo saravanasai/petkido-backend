@@ -31,10 +31,15 @@ app.use(limiter);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-import healthcheckRouter from "./src/routes/healthcheck.routes.js";
+import healthcheckRouter from "./src/routes/v1/healthcheck.routes.js";
+
+import authentiationRouter from "./src/routes/v1/authentication.routes.js";
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
+
+// * authentiation
+app.use("/api/v1/auth", authentiationRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello Worldsssss!");
